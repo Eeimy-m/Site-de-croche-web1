@@ -1,10 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Chaveiros de Crochê - Mundo do Crochê</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container-sm {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.05);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .nav-tabs {
+            border-bottom: 2px solid #e9ecef;
+            margin-bottom: 20px;
+        }
+        .nav-link {
+            color: #495057;
+            font-weight: bold;
+            padding: 10px 20px;
+        }
+        .nav-link.active {
+            color: #007bff;
+            border-color: #007bff #007bff #fff;
+            background-color: #fff;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: #343a40;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+        .product-card {
+            margin-bottom: 30px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            background-color: #fff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: 250px; /* Altura fixa para padronização */
+            object-fit: contain; /* Mantém proporção sem distorcer */
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #dee2e6;
+            background-color: #f8f9fa; /* Fundo para imagens transparentes */
+        }
+        .product-card h4 {
+            font-size: 1.5rem;
+            color: #212529;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .product-card .materials {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #6c757d;
+            margin: 15px 0;
+        }
+        .product-card .technique {
+            font-size: 1rem;
+            color: #495057;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <div class="container-sm">
@@ -13,13 +91,83 @@
                 <a class="nav-link" href="../Página_principal.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="Páginas secundárias/Página_chaveiros.html">Chaveiros</a>
+                <a class="nav-link active" href="Página_chaveiros.html">Chaveiros</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="Página_bolsas.html">Bolsas</a>
             </li>
         </ul> <br>
+
+        <h2 class="text-center mb-4">Nossos Chaveiros de Crochê</h2>
+
+        <div class="row">
+            <!-- Chaveiro 1 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <img src="https://img.elo7.com.br/product/zoom/43540F1/chaveiro-morangos-em-croche-artesanato.jpg" alt="Chaveiro de Morango">
+                    <h4>Chaveiro Morango</h4>
+                    <p class="materials">Linha: Anne 100% algodão (vermelho e verde)</p>
+                    <p class="technique">Agulha: 2.0mm | Técnica: Amigurumi básico</p>
+                    <p class="technique">Detalhes: Sementes em ponto alto</p>
+                </div>
+            </div>
+
+            <!-- Chaveiro 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <img src="https://img.elo7.com.br/product/zoom/3B15F82/chaveiro-coracao-amigurumi.jpg" alt="Chaveiro Coração">
+                    <h4>Chaveiro Coração</h4>
+                    <p class="materials">Linha: Círculo Série Prata (rosa e vermelho)</p>
+                    <p class="technique">Agulha: 2.5mm | Técnica: Ponto baixo</p>
+                    <p class="technique">Detalhe: Bordado em linha contrastante</p>
+                </div>
+            </div>
+
+            <!-- Chaveiro 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <img src="https://img.elo7.com.br/product/zoom/4BE8E1C/chaveiro-ursinho-croche.jpg" alt="Chaveiro Ursinho">
+                    <h4>Chaveiro Ursinho</h4>
+                    <p class="materials">Linha: Camila 100% algodão (marrom e bege)</p>
+                    <p class="technique">Agulha: 1.75mm | Técnica: Amigurumi avançado</p>
+                    <p class="technique">Acessórios: Olhos de segurança</p>
+                </div>
+            </div>
+
+            <!-- Chaveiro 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <img src="https://th.bing.com/th/id/OIP.cv22mTtY9CFt18TJwkrppAHaHa?r=0&rs=1&pid=ImgDetMain" alt="Chaveiro Flor">
+                    <h4>Chaveiro Flor</h4>
+                    <p class="materials">Linha: Sol 100% algodão (amarelo e verde)</p>
+                    <p class="technique">Agulha: 2.0mm | Técnica: Ponto palito</p>
+                    <p class="technique">Detalhe: Miçangas no centro</p>
+                </div>
+            </div>
+
+            <!-- Chaveiro 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <img src="https://img.elo7.com.br/product/zoom/4F623C6/chaveiro-estrela-em-croche-estrela-amigurumi.jpg" alt="Chaveiro Estrela">
+                    <h4>Chaveiro Estrela</h4>
+                    <p class="materials">Linha: Corrente Meia Lua (dourado)</p>
+                    <p class="technique">Agulha: 2.5mm | Técnica: Ponto fantasia</p>
+                    <p class="technique">Detalhe: Linha metalizada</p>
+                </div>
+            </div>
+
+            <!-- Chaveiro 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="product-card">
+                    <img src="https://img.elo7.com.br/product/zoom/4FD7080/chaveiro-casal-de-coelhos-pascoa.jpg" alt="Chaveiro Coelho">
+                    <h4>Chaveiro Coelho</h4>
+                    <p class="materials">Linha: Anne e Camila (branco e rosa)</p>
+                    <p class="technique">Agulha: 1.5mm | Técnica: Amigurumi detalhado</p>
+                    <p class="technique">Acessórios: Laço de fita</p>
+                </div>
+            </div>
+        </div>
     </div>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
