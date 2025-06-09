@@ -8,6 +8,10 @@
         integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <title>Document</title>
     <style>
+        .container-sm {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
         body {
             background-image: url(https://i.pinimg.com/736x/bc/d2/cc/bcd2ccc7a10ce5fe623696fade769587.jpg);
             background-size: cover;
@@ -63,11 +67,24 @@
             transform: translateY(-8px);
             box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
         }
+        footer {
+            background-color: rgb(245, 227, 180);
+            color: black;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
     </style>
 </head>
 
 <body> <br>
-    <div class="container-sm border border-black rounded"> <br>
+    <div class="container-sm rounded"> <br>
         <h2>Mundo do crochê</h2> <br>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -117,11 +134,15 @@
                     alt="" class="border border-5 border-white rounded"> </div>
         </div> <br>
         <div class="row">
-            <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill"> Peças de roupa
+            <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill">
+                <a href="roupas.html"> Peças de roupa </a>
             </div>
-            <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill"> Itens decorativos
+            <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill">
+                <a href="itensDeco.html"> Itens decorativos </a>
             </div>
-            <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill"> Tapetes </div>
+            <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill">
+                <a href="tapetes.html"> Tapetes </a>
+            </div>
         </div>
         <div class="row">
             <div class="col my-4 op p-3 mb-2 bg-primary-subtle text-primary-emphasis rounded-pill">
@@ -174,6 +195,9 @@
             </div>
         </div>
     </div> <br>
+     <footer>
+        <p> Referências de imagens retiradas do pinterest</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
